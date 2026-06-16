@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theja Traders | Premium Cement & Construction Supplies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">THEJA TRADERS</div>
+        <ul class="nav-links">
+            <li><a href="#about">Why Us</a></li>
+            <li><a href="#products">Our Brands</a></li>
+            <li><a href="#calculator">Material Estimator</a></li>
+            <li><a href="#hub">Distribution Hub</a></li>
+            <li><a href="#quote" class="btn-nav">Get Live Quote</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Building Dreams. <br>Securing <span class="highlight">Generations.</span></h1>
+            <p>Authorized regional distributor of genuine Bharathi, Zuari, and UltraTech cement supplies. Heavy industrial strength delivered straight to your wholesale infrastructure or construction job site coordinates.</p>
+            <a href="#quote" class="btn-main-3d">Check Bulk Wholesale Pricing</a>
+        </div>
+    </header>
+
+    <section id="about" style="padding: 120px 10% 60px; text-align: center; background-color: #15191e;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 10px;">Uncompromising Wholesale Logistics</h2>
+        <p style="color: #94a3b8; font-size: 1.2rem; margin-bottom: 60px;">Direct factory supply lines tracking structural safety standards</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1200px; margin: 0 auto;">
+            <div class="feature-card">
+                <h4 style="font-size: 1.5rem; color: #fff; margin-bottom: 12px;">100% Genuine Quality</h4>
+                <p style="color: #94a3b8; font-size: 1.05rem;">Every single bag comes directly stamped from official production plants with fresh manufacturing batch verification numbers.</p>
+            </div>
+            <div class="feature-card" style="border-left-color: var(--safety-orange);">
+                <h4 style="font-size: 1.5rem; color: #fff; margin-bottom: 12px;">On-Time Site Fleet</h4>
+                <p style="color: #94a3b8; font-size: 1.05rem;">Dedicated transit trucks guarantee fast unloading directly at your residential or commercial construction site layout coordinates.</p>
+            </div>
+            <div class="feature-card" style="border-left-color: #ffffff;">
+                <h4 style="font-size: 1.5rem; color: #fff; margin-bottom: 12px;">Storage Excellence</h4>
+                <p style="color: #94a3b8; font-size: 1.05rem;">Our modern warehouse facilities run under strict moisture-free protection metrics preventing premature curing or setting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="product-section">
+        <h2>Premium Cement Brands</h2>
+        <p class="subtitle">Select a premier brand below to instantly view technical applications and direct packaging layouts</p>
+        
+        <div class="tabs">
+            <button id="bharathi-btn" class="tab-btn-3d active">Bharathi Cement</button>
+            <button id="zuari-btn" class="tab-btn-3d">Zuari Cement</button>
+            <button id="ultratech-btn" class="tab-btn-3d">UltraTech Cement</button>
+        </div>
+        
+        <div id="product-display" class="masterpiece-card"></div>
+    </section>
+
+    <section id="calculator" class="calc-section">
+        <div class="calc-container-3d">
+            <h2>Quick Bag Estimator</h2>
+            <p>Enter your planned slab area to calculate approximately how many standard 50kg bags your project requires.</p>
+            <div class="calc-box">
+                <input type="number" id="volume-input" placeholder="Enter slab area (Sq. Feet)" min="1">
+                <button id="calc-btn" class="btn-submit-3d">Calculate Requirements</button>
+                <h3 id="calc-result"></h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="contact-section">
+        <h2>Request a Commercial Quote</h2>
+        <p>Submit your material requirements below. Our logistics desk at Theja Traders will contact you within 2 hours.</p>
+        
+        <form class="lead-form-3d" id="quote-form" action="https://formspree.io/f/xgobqajo" method="POST">
+            <input type="text" name="companyOrContractor" placeholder="Your Name / Contractor Company" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="number" name="requiredVolume" placeholder="Required Volume (Number of Bags or Tons)" required>
+            <button type="submit" class="btn-submit-3d variant-orange">Submit Quote Request</button>
+        </form>
+    </section>
+
+    <section id="hub" style="padding: 120px 10%; text-align: center; background-color: #1a1f26; border-top: 4px solid var(--safety-orange);">
+        <h3 style="font-weight: 800; font-size: 3rem; color: #fff; margin-bottom: 10px;">Our Distribution Hub</h3>
+        <p style="color: #94a3b8; font-size: 1.2rem; margin-bottom: 50px;">Serving high-profile industrial construction portfolios across the territory</p>
+        
+        <div style="background: var(--midnight-panel); max-width: 850px; margin: 0 auto; padding: 60px; border-radius: 20px; box-shadow: var(--card-shadow); text-align: left; border-right: 8px solid var(--industrial-gold);">
+            
+            <p style="margin-bottom: 15px; font-weight: 800; font-size: 1.8rem; color: #fff; display: flex; align-items: center; gap: 12px;">
+                📍 Headquarters Depot Office:
+            </p>
+            <p style="margin: 0 0 35px 0; color: #e2e8f0; font-size: 1.45rem; line-height: 1.7; font-weight: 600;">
+                Theja Traders, Aragonda, Thavanampalli Mandal, Chittoor, Andhra Pradesh.
+            </p>
+            
+            <hr style="border: 0; border-top: 2px solid #2e3846; margin-bottom: 35px;">
+            
+            <p style="margin-bottom: 12px; font-weight: 800; font-size: 1.8rem; color: var(--industrial-gold); display: flex; align-items: center; gap: 12px;">
+                📞 Direct Logistics Hotline:
+            </p>
+            <p style="margin: 0 0 15px 0; color: #fff; font-size: 2.2rem; font-weight: 800; letter-spacing: 1.5px;">
+                +91 94407 09367
+            </p>
+            
+            <p style="margin: 25px 0 0 0; color: var(--muted-text); font-size: 1.2rem; font-style: italic; border-left: 3px solid var(--safety-orange); padding-left: 15px;">
+                ⏱️ Operational Schedule: 8:00 AM – 6:00 PM (Monday to Saturday)
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Theja Traders. All rights reserved. | Built for Structural Excellence</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

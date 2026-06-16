@@ -1,0 +1,349 @@
+/* Premium Deep Industrial Matrix */
+:root {
+    --dark-slate: #15191e;
+    --midnight-panel: #1e232b;
+    --industrial-gold: #ff9f1c;
+    --safety-orange: #ff5722;
+    --light-text: #f1f5f9;
+    --muted-text: #94a3b8;
+    --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    --3d-press: inset 0 -4px 0 rgba(0,0,0,0.3), 0 6px 15px rgba(0,0,0,0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-slate);
+    color: var(--light-text);
+    line-height: 1.7;
+}
+
+/* Grand Navbar Layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #0d1013;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--industrial-gold);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    background: linear-gradient(to right, #ffffff, var(--industrial-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--industrial-gold);
+}
+
+.btn-nav {
+    background: var(--safety-orange);
+    padding: 12px 28px;
+    border-radius: 50px;
+    box-shadow: var(--3d-press);
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Massive 3D Hero Frame */
+.hero {
+    height: 85vh;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1200') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(13, 16, 19, 0.85), rgba(21, 25, 30, 0.9));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-content h1 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+
+.highlight {
+    color: var(--industrial-gold);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 850px;
+    margin: 0 auto;
+    color: #cbd5e1;
+}
+
+.btn-main-3d {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--industrial-gold), #f39c12);
+    color: #111;
+    padding: 22px 50px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    box-shadow: inset 0 -5px 0 rgba(0,0,0,0.3), 0 10px 25px rgba(243, 156, 18, 0.4);
+    transition: transform 0.1s;
+}
+
+.btn-main-3d:active {
+    transform: translateY(3px);
+}
+
+/* Feature Grid Cards */
+.feature-card {
+    background: var(--midnight-panel);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    border-left: 5px solid var(--industrial-gold);
+}
+
+/* Showcase Section & Fixed Dynamic Wrapper */
+.product-section {
+    padding: 120px 10%;
+    text-align: center;
+    background-color: #1a1f26;
+}
+
+.product-section h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--muted-text);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.tabs {
+    margin: 40px 0;
+}
+
+.tab-btn-3d {
+    padding: 16px 40px;
+    border: none;
+    background: #2a313d;
+    color: #cbd5e1;
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 0 12px;
+    border-radius: 6px;
+    box-shadow: var(--3d-press);
+    transition: all 0.2s;
+}
+
+.tab-btn-3d.active, .tab-btn-3d:hover {
+    background: var(--safety-orange);
+    color: #fff;
+    box-shadow: inset 0 -4px 0 rgba(0,0,0,0.3), 0 8px 20px rgba(255, 87, 34, 0.4);
+}
+
+/* Perfected 3D Brand Module Wrapper */
+.masterpiece-card {
+    background: var(--midnight-panel);
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    border-bottom: 8px solid var(--industrial-gold);
+}
+
+.product-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.product-details-container {
+    flex: 1.5;
+}
+
+.product-details-container h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.badge-3d {
+    display: inline-block;
+    background: rgba(255, 159, 28, 0.15);
+    color: var(--industrial-gold);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border: 1px solid var(--industrial-gold);
+}
+
+/* Material Calculator Panel */
+.calc-section {
+    padding: 120px 5%;
+    background-color: var(--dark-slate);
+}
+
+.calc-container-3d {
+    background: var(--midnight-panel);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    border-top: 8px solid var(--industrial-gold);
+}
+
+.calc-container-3d h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.calc-container-3d p {
+    font-size: 1.2rem;
+    color: var(--muted-text);
+}
+
+.calc-box input {
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0 20px;
+    border: 2px solid #334155;
+    background-color: #13171d;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    outline: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* B2B Capture Framework */
+.contact-section {
+    padding: 120px 5%;
+    background: #0d1013;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: var(--muted-text);
+}
+
+.lead-form-3d {
+    max-width: 600px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lead-form-3d input {
+    padding: 20px;
+    border: 2px solid #2e3846;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: var(--midnight-panel);
+    color: #fff;
+    outline: none;
+}
+
+.btn-submit-3d {
+    width: 100%;
+    background: var(--industrial-gold);
+    color: #111;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: var(--3d-press);
+}
+
+.btn-submit-3d.variant-orange {
+    background: var(--safety-orange);
+    color: #fff;
+}
+
+/* Footer layout */
+footer {
+    background: #07090b;
+    color: var(--muted-text);
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+    border-top: 2px solid #13171d;
+}
